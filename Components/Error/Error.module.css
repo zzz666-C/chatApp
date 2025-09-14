@@ -1,0 +1,29 @@
+
+/* Fullscreen overlay to block interactions when wallet is not connected */
+.Error{
+  position: fixed;
+  inset: 0;
+  z-index: 1111111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+}
+
+/* Centered dialog card */
+.Error_box{
+  background: linear-gradient(180deg, #F18303, #e17902);
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 2rem;
+  max-width: 520px;
+  width: 100%;
+  color: #141414;
+}
+
+@media only screen and (max-width:35em){
+  .Error{ padding: 1rem; }
+}

@@ -1,0 +1,31 @@
+
+.Friend, .friend{ /* support both cases */
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.Friend_box, .friend_box{
+  display: grid;
+  grid-template-columns: 1.25fr 2.75fr;
+  gap: 1.25rem;
+}
+
+.Friend_box_left, .friend_box_left{
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: .75rem;
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.Friend_box_right, .friend_box_right{
+  min-height: 70vh;
+}
+
+@media only screen and (max-width: 35rem){
+  .Friend, .friend{ width: 95%; }
+  .Friend_box, .friend_box{ grid-template-columns: 1fr; gap: 1rem; }
+  .Friend_box_right, .friend_box_right{ min-height: auto; }
+}
